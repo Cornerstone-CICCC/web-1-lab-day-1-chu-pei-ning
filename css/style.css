@@ -2,3 +2,47 @@ main,
 footer {
   display: flex;
 }
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color:  #111d51;
+
+}
+.sidebar {
+  background-color: yellow;
+}
+.sidebar h3 {
+  color: blue;
+}
+.content {
+  background-color: aqua;
+}
+
+#about ~ p {
+  background-color: rgb(0, 0, 1);
+  color: white;
+}
+
+#services ~ p {
+  background-color: green;
+  color: white;
+}
+#services + p + ul li {
+  list-style-type: circle;
+}
+#services + p + ul > li:nth-of-type(even) {
+  color: red;
+}
+#contact ~ ul > li a {
+  color: red;
+}
+footer div:first-child {
+  background-color: rgb(255, 191, 203);
+}
+footer div:nth-child(2) {
+  background-color: rgb(165, 41, 42);
+  color: white;
+}
+footer div:last-child {
+  background-color: gray;
+}
